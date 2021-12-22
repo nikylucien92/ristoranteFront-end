@@ -49,6 +49,7 @@ import { TavoloComponent } from './module/tavolo/tavolo.component';
 import { ServiceTableService } from './src/app/service/service-table.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProvaGitComponent } from './prova-git/prova-git.component';
 
 
 
@@ -105,6 +106,7 @@ const materialModules = [
     PopupEditBookingsComponent,
     PopupNewBookComponent,
     TavoloComponent,
+    ProvaGitComponent,
   ],
   imports: [
     BrowserModule,

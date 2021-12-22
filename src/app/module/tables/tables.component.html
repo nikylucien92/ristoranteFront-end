@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables</title>
+</head>
+<body>
+
+  <div class="row">
+    <form class="form-group" [formGroup]="formTavolo" (ngSubmit)="aggiungiTavolo()">
+      <button mat-raised-button color="warn">aggiungi tavolo</button>
+
+      <input matInput placeholder="inserire codice tavolo..." formControlName="cod_tavolo" >
+      <input matInput placeholder="inserire numero di posti..." formControlName="posti_occupati"  >
+      <button mat-raised-button color="primary" id="addTable" (click)="openDialog()">Add new table</button>
+    </form>
+  </div>
+
+  <div class="tavolo1" #tavolo1 >
+
+    <label>Tavolo 1 </label>
+    <div class="classButtons" #tavolo1>
+      <button mat-raised-button color="primary" name="tavolo1" class="btnTavolo1" (click)="openEditTable()"  >Edit</button>
+      <button mat-raised-button color="primary"class="btnTavolo1" (click)="removeTavolo1()"  >Delete</button>
+
+    </div>
+  </div>
+
+
+  <div class="tavolo2" #tavolo2>
+
+    <label>Tavolo 2 </label>
+    <div class="row" id="buttonsTavolo2" #tavolo2>
+      <button mat-raised-button color="primary" id="editTavolo2"  (click)="openEditTable()">Edit</button>
+      <button mat-raised-button color="primary" id="btnTavoloDelete" (click)="removeTavolo2()" >Delete</button>
+
+    </div>
+  </div>
+
+
+  <div class="tavolo3" #tavolo3 >
+
+    <label>Tavolo 3 </label>
+
+    <div class="row" id="buttonsTavolo3" #tavolo3>
+      <button mat-raised-button color="primary" id="btnEdit3"  (click)="openEditTable()">Edit</button>
+      <button mat-raised-button color="primary"id="btnDelete3"  (click)="removeTavolo3()">Delete</button>
+
+    </div>
+  </div>
+
+<br><br>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+</head>
+<body>
+
+  <div class="tavolo1" >
+
+    <label>Tavolo 1 </label>
+    <label>Tavolo 2 prenotato da : Bianchi </label>
+
+  </div>
+<div class="classButtons">
+  <button mat-raised-button color="primary" name="tavolo1" class="btnTavolo1" (click)="openDialogEdit()" >Edit</button>
+  <button mat-raised-button color="primary"class="btnTavolo1" >Un-book</button>
+
+</div>
+
+  <div class="tavolo2" >
+
+    <label>Tavolo 2 prenotato da : Rossi </label>
+  </div>
+  <div class="row">
+    <button mat-raised-button color="primary" id="editTavolo2" >Edit</button>
+    <button mat-raised-button color="primary" id="btnTavoloDelete" >Un-book</button>
+
+  </div>
+
+
+  <div class="tavolo3" >
+
+    <label style="color: brown;">Tavolo 3 non prenotato</label>
+
+  </div>
+  <div class="row">
+    <button mat-raised-button color="primary" id="btnEdit3">Edit</button>
+    <button mat-raised-button color="primary"id="btnDelete3" (click)="openNewBooking()" >Book</button>
+
+  </div>
+
+</body>
+</html>

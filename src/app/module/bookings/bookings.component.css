@@ -1,0 +1,67 @@
+.tavolo1{
+  width: 300px;
+  height: 100px;
+background-color: rgb(235, 208, 123);
+margin-left: 100px;
+margin-top: 100px;
+}
+
+.tavolo1 >label{
+  font-size: 30px;
+  font-family: Courier;
+  color: aliceblue;
+  margin: 5%;
+
+}
+
+.tavolo2{
+  width: 300px;
+  height: 100px;
+background-color:rgb(235, 208, 123);
+margin-left: 550px;
+margin-top: 130px;
+}
+
+.tavolo2 >label{
+  font-size: 30px;
+    font-family: Courier;
+  color: aliceblue;
+  margin: 5%;
+
+}
+#addTable{
+  margin-left: 1100px;
+}
+
+.tavolo3{
+  width: 300px;
+  height: 100px;
+background-color: rgb(235, 208, 123);
+margin-left:350px;
+margin-top: 100px;
+}
+
+.tavolo3 >label{
+  font-size: 30px;
+  font-family: Courier;
+  color: aliceblue;
+position: static;
+
+}
+.btnTavolo1{
+  margin-left:120px;
+}
+#btnTavoloDelete{
+  margin-left: -250px;
+}
+#editTavolo2{
+  margin-left: 760px;
+}
+
+#btnEdit3{
+margin-left: 370px;
+}
+
+#btnDelete3{
+margin-left: 125px;
+}

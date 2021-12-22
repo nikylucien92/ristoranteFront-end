@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <mat-card>
+    <button type="button"  mat-raised-button  color="primary" (click)="closeModalDialog()"> X</button>
+  <h4>Create a new table</h4>
+  <div class="another-test" #divAdd></div>
+
+    <label>Table Number : </label>
+<input type="number" minlength="0" >
+<!--inserire un pattern per il numero minimo di tavoli e i posti a sedere-->
+<!--inserire un button di conferma e uno di torna indietro-->
+<label style="display: inline-block;">Number of seat : </label>
+<input type="number" >
+
+</mat-card>
+<button mat-raised-button color="primary" id="bokings" (click)="addTable()">Create table</button>
+
+</body>
+</html>

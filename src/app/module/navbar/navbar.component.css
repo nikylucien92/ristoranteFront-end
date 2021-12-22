@@ -1,0 +1,14 @@
+mat-card{
+  margin:5%;
+}
+.rowNavBar{
+padding-left: 40%;
+
+}
+.rowNavBar > button{
+  margin-left: 20%;
+
+}
+#tables{
+  margin-left: -15%;
+}

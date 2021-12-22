@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Booking</title>
+</head>
+
+<body>
+
+  <div class="row">
+    <h3>Create New Booking</h3>
+
+    <label>Nome </label>
+    <input matInput value="nome">
+
+  </div>
+
+  <div class="row">
+
+    <label>Date time </label>
+    <input matInput [matDatepicker]="picker">
+
+    <mat-datepicker-toggle matSuffix matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+
+  </div>
+
+<div class="row">
+  <section class="example-section">
+    <div class="row">
+      <mat-checkbox class="example-margin"> Tavolo 3</mat-checkbox>
+    </div>
+    <div class="row">
+      <mat-checkbox class="example-margin" [disabled]="true">Tavolo1</mat-checkbox>
+
+    </div>
+
+  </section>
+</div>
+
+<hr>
+
+<div class="row">
+  <h3>Booker Information</h3>
+  <label>First Name </label>
+  <input matInput  value="Giuseppe">
+
+
+  <label style="display: inline-block;">Last Name </label>
+  <input matInput  value="Senese">
+
+</div>
+
+<div class="row">
+  <label>Phone number</label>
+  <input matInput  value="555-344-2231">
+
+
+  <label>E-mail </label>
+  <input matInput  value="james_senese@gmail.com">
+
+</div>
+<br><br>
+<div class="btnEditBooking">
+  <button mat-raised-button color="primary" >Edit booking</button>
+
+</div>
+</body>
+
+</html>

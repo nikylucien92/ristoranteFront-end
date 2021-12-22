@@ -1,0 +1,11 @@
+mat-toolbar{
+  background-color: rgb(64, 82, 184);
+color: aliceblue;
+font-size: 30px;
+
+}
+mat-toolbar > label{
+  margin-left: 40%;
+  font-style: oblique;
+font-family:Tahoma;
+}

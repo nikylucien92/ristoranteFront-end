@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="classNavBar">
+    <mat-card>
+      <mat-icon>eco</mat-icon>
+      <div class="rowNavBar">
+        <button mat-raised-button color="primary" routerLink="/app-tables" (click)="goToTables()"
+          id="tables">Tables</button>
+
+        <button mat-raised-button color="primary" routerLink="/app-bookings" id="bokings"
+          (click)="goToBookings()">Bokings</button>
+
+        <button mat-raised-button color="primary" id="orders" routerLink="/app-orders"
+          (click)="goToOrders()">Orders</button>
+      </div>
+
+    </mat-card>
+  </div>
+
+  <!---->
+
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <th>Id tavolo</th>
+        <th> Posti occupati</th>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let tavolo of arrayTavoli">
+          <td> {{ tavolo.cod_tavolo}}</td>
+          <td> {{ tavolo.posti_occupati}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <router-outlet></router-outlet>
+</body>
+
+</html>
